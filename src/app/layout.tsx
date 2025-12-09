@@ -14,7 +14,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={` antialiased`}>
-        <div className="flex min-h-screen w-full bg-gray-50">
+        <div className="flex min-h-screen w-full  bg-gray-50">
           {/* Sidebar */}
           <Sidebar isOpen={sidebarOpen} setIsOpen={setSidebarOpen} />
 
