@@ -8,8 +8,10 @@ interface LoginPayload {
 }
 
 interface LoginResponse {
-  access: string;
-  refresh: string;
+  token: {
+    access: string;
+    refresh: string;
+  };
   user: {
     id: string;
     name: string;
@@ -18,10 +20,11 @@ interface LoginResponse {
   };
 }
 
+
 export async function loginUser(payload: LoginPayload): Promise<LoginResponse> {
   const res = await api.post<LoginResponse>(`/auth/login/`, payload);
 
-  const { access, refresh } = res.data;
+  const { access, refresh } = res.data.token;
 
   // Save Access Token (localStorage)
   localStorage.setItem('accessToken', access);
