@@ -19,7 +19,7 @@ export default function LoginPage() {
 
     try {
       await loginUser({ email, password });
-      router.push("/dashboard");
+      router.push("/admin/dashboard");
     } catch (err) {
       const error = err as AxiosError<{ message: string }>;
       alert(error.response?.data?.message || "Login failed");
