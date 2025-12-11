@@ -201,9 +201,9 @@ export const groupedMenuItems = {
             href: '/admin/settings/general',
           },
           {
-            title: 'Product Info',
+            title: 'System Info',
             icon: Info,
-            href: '/admin/settings/product-info',
+            href: '/admin/settings/system-info',
           },
           {
             title: 'Notifications',
