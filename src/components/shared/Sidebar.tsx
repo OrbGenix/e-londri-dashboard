@@ -94,7 +94,7 @@ export default function Sidebar({ isOpen, setIsOpen }: SidebarProps) {
             )}
           </nav>
 
-          <div className="text-gray-400 text-sm mt-6">© 2025 My Company</div>
+          <div className="text-gray-400 text-sm mt-6">© 2025 eLaundry</div>
         </div>
       </aside>
     </>
